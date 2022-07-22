@@ -1,0 +1,7 @@
+__pycache__/
+.coverage*
+.hypothesis
+.pytest_cache
+coverage.xml
+openapi.json
+htmlcov

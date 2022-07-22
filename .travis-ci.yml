@@ -1,0 +1,15 @@
+language: python
+
+dist: focal
+
+python:
+  - "3.9"
+
+install:
+  - make
+
+script:
+  - make test
+
+after_success:
+  - make cov-reports && poetry run codecov
