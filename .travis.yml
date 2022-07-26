@@ -6,10 +6,12 @@ python:
   - "3.9"
 
 install:
-  - make
+  - make poetry
+  - source $HOME/.poetry/env
+  - make install
 
 script:
-  - make test
+  - make tests
 
 after_success:
   - make cov-reports && poetry run codecov

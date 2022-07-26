@@ -19,7 +19,7 @@ open http://localhost:5601/app/dev_tools#/console           # hello kibana!
 
 ## Project Dependencies
 
-### App 
+### App
 
 -   [fastapi](https://fastapi.tiangolo.com/)
 -   [uvicorn](https://www.uvicorn.org/)
@@ -29,7 +29,7 @@ open http://localhost:5601/app/dev_tools#/console           # hello kibana!
 -   [pre-commit](https://pre-commit.com/index.html)
 -   [schemathesis](https://schemathesis.readthedocs.io/en/stable/)
 
-Surprisingly, I had to install requests as a dev dependency...I would have 
+Surprisingly, I had to install requests as a dev dependency...I would have
 expected that to be installed by default with fastapi so testing could be done
 without having to specify that dependency...but maybe it's better this way so
 when running in production there's one less dependency?
